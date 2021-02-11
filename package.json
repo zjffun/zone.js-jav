@@ -1,5 +1,5 @@
 {
-  "name": "zone.js",
+  "name": "@zjffun/zone.js-jav",
   "version": "0.11.3",
   "description": "Zones for JavaScript",
   "main": "./bundles/zone.umd.js",
@@ -35,7 +35,7 @@
     "directory": "packages/zone.js"
   },
   "publishConfig": {
-    "registry": "https://wombat-dressing-room.appspot.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "author": "Brian Ford",
   "license": "MIT",
