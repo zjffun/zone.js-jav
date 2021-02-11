@@ -1,3 +1,11 @@
+zone.js for [JS asynchronous visualization](https://github.com/zjffun/js-async-visualization)
+
+Feature:
+
+- Store calling stack of `then`, `catch` and `finally` methods of promise in task data.
+
+---
+
 # Zone.js
 
 [![CDNJS](https://img.shields.io/cdnjs/v/zone.js.svg)](https://cdnjs.com/libraries/zone.js)

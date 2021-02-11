@@ -424,6 +424,7 @@ Zone.__load_patch('ZoneAwarePromise', (global: any, Zone: ZoneType, api: _ZonePr
         C = this.constructor || ZoneAwarePromise;
       }
       const chainPromise: Promise<TResult1|TResult2> = new (C as typeof ZoneAwarePromise)(noop);
+      (chainPromise as any)._JAV_promiseStack = new Error().stack;
       const zone = Zone.current;
       if ((this as any)[symbolState] == UNRESOLVED) {
         (<any[]>(this as any)[symbolValue]).push(zone, chainPromise, onFulfilled, onRejected);
@@ -445,6 +446,7 @@ Zone.__load_patch('ZoneAwarePromise', (global: any, Zone: ZoneType, api: _ZonePr
       }
       const chainPromise: Promise<R|never> = new (C as typeof ZoneAwarePromise)(noop);
       (chainPromise as any)[symbolFinally] = symbolFinally;
+      (chainPromise as any)._JAV_promiseStack = new Error().stack;
       const zone = Zone.current;
       if ((this as any)[symbolState] == UNRESOLVED) {
         (<any[]>(this as any)[symbolValue]).push(zone, chainPromise, onFinally, onFinally);

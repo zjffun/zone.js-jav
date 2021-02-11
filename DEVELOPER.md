@@ -1,3 +1,5 @@
+This doc is from [angular/zone.js](https://github.com/angular/zone.js/), now we should build it from Angular. See [angular/DEVELOPER.md at master · angular/angular](https://github.com/angular/angular/blob/master/docs/DEVELOPER.md#building)
+
 To run tests
 ------------
 
